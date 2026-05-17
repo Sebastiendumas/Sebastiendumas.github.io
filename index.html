@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Sébastien Dumas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="bandeau-haut">
+    <img src="images/bando-O-PF.jpg" alt="Bandeau portfolio GRETA de Quimper" />
+  </header>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <ul>
+        <li><a href="#profil"      class="nav-link">Profil</a></li>
+        <li><a href="#competences" class="nav-link">Compétences</a></li>
+        <li><a href="#projets"     class="nav-link">Projets</a></li>
+        <li><a href="#stages"      class="nav-link">Stages</a></li>
+        <li><a href="#veille"      class="nav-link">Veille</a></li>
+        <li><a href="#contact"     class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="profil" class="section reveal">
+      <div class="section-inner">
+        <div class="profil-card">
+          <div class="profil-info">
+            <h3 class="nom">Sébastien Dumas</h3>
+            <p class="formation">BTS SIO – Option SLAM – GRETA Quimper – 2025/26</p>
+            <div class="profil-liens">
+              <a href="cv.pdf" class="btn-lien" download>CV</a>
+              <a href="tableau_synthese.xlsx" class="btn-lien" download>Tableau de synthèse</a>
+              <a href="https://linkedin.com/in/sebastien-dumas" class="btn-lien" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com/sebastien-dumas" class="btn-lien" target="_blank" rel="noopener">GitHub</a>
+              <a href="mailto:sebastien.dumas283@orange.fr" class="btn-lien">Mail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="competences" class="section reveal alt-bg">
+      <div class="section-inner">
+        <h2>Compétences</h2>
+        <div class="competences-grid">
+          <div class="comp-categorie">
+            <h3>Langages</h3>
+            <div class="tags">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span><span class="tag">PHP</span>
+              <span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Java</span>
+            </div>
+          </div>
+          <div class="comp-categorie">
+            <h3>Frameworks &amp; Outils</h3>
+            <div class="tags">
+              <span class="tag">Eclipse</span><span class="tag">Laragon</span>
+              <span class="tag">Git / GitHub</span><span class="tag">VS Code</span>
+              <span class="tag">PhpMyAdmin</span><span class="tag">RAD Studio</span>
+              <span class="tag">Tonny</span><span class="tag">NotePad++</span>
+            </div>
+          </div>
+          <div class="comp-categorie">
+            <h3>Réseaux &amp; Systèmes</h3>
+            <div class="tags">
+              <span class="tag">TCP/IP</span><span class="tag">Active Directory</span>
+              <span class="tag">Linux</span><span class="tag">Virtualisation</span>
+            </div>
+          </div>
+          <div class="comp-categorie">
+            <h3>Méthodes</h3>
+            <div class="tags">
+              <span class="tag">UML</span><span class="tag">Merise</span>
+              <span class="tag">Méthode Agile</span><span class="tag">RGPD</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projets" class="section reveal">
+      <div class="section-inner">
+        <h2>Projets réalisés</h2>
+        <div class="projets-grid">
+
+          <!-- ===== PROJET 01 — RÉSEAUX & SYSTÈMES ===== -->
+          <article class="projet-card">
+            <div class="projet-bg" style="background-image:url('images/rectangle_reseau.jpg')">
+              <span class="projet-num">01</span>
+              <span class="projet-annee">2025–26</span>
+            </div>
+            <div class="projet-body">
+              <h3>Réseaux &amp; Systèmes</h3>
+              <p>Trois travaux pratiques : réseaux TCP/IP avec Packet Tracer, ticketing GLPI avec base MySQL, et administration Windows Server 2016.</p>
+              <div class="tags">
+                <span class="tag">TCP/IP</span><span class="tag">Windows Server</span><span class="tag">GLPI</span>
+              </div>
+              <div class="projet-liens">
+                <button class="btn-projet btn-modal-open" data-modal="reseau-packettracer">Packet Tracer</button>
+                <button class="btn-projet btn-modal-open" data-modal="reseau-glpi">GLPI</button>
+                <button class="btn-projet btn-modal-open" data-modal="reseau-winserver">Windows Server</button>
+              </div>
+            </div>
+          </article>
+
+<!-- ===== PROJET 02 — LAFLEUR ===== -->
+          <article class="projet-card">
+            <div class="projet-bg" style="background-image:url('images/rosiers_parfum_blur.jpg')">
+              <span class="projet-num">02</span>
+              <span class="projet-annee">2025</span>
+            </div>
+            <div class="projet-body">
+              <h3>Site LaFleur</h3>
+              <p>Catalogue en ligne d'une société de vente de graines et bulbes, version statique puis dynamique avec PHP/MySQL.</p>
+              <div class="tags">
+                <span class="tag">HTML5</span><span class="tag">PHP</span><span class="tag">MySQL</span>
+              </div>
+              <div class="projet-liens">
+                <button class="btn-projet btn-modal-open" data-modal="lafleur">Voir le projet</button>
+              </div>
+            </div>
+          </article>
+
+<!-- ===== PROJET 03 — HUNVRE ===== -->
+          <article class="projet-card">
+            <div class="projet-bg" style="background-image:url('images/hunvre_bg.jpg'); background-color:#1a0a2e;">
+              <span class="projet-num">03</span>
+              <span class="projet-annee">2026</span>
+            </div>
+            <div class="projet-body">
+              <h3>Hunvre — Jeu de cartes</h3>
+              <p>Jeu de cartes inspir&eacute; de Balatro, d&eacute;velopp&eacute; en &eacute;quipe de 5 en Java. Interface JavaFX, base de donn&eacute;es MySQL et version web Servlet.</p>
+              <div class="tags">
+                <span class="tag">Java</span><span class="tag">JavaFX</span><span class="tag">MySQL</span><span class="tag">Servlet</span>
+              </div>
+              <div class="projet-liens">
+                <button class="btn-projet btn-modal-open" data-modal="hunvre">Voir le projet</button>
+                <a href="#" class="btn-projet secondary" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+<!-- ===== PROJET 04 — FOTOFOLIO ===== -->
+          <article class="projet-card">
+            <div class="projet-bg" style="background-image:url('images/fotofolio_bg.jpg'); background-color:#1a1a2e;">
+              <span class="projet-num">04</span>
+              <span class="projet-annee">2025</span>
+            </div>
+            <div class="projet-body">
+              <h3>Fotofolio</h3>
+              <p>Portfolio photographique r&eacute;alis&eacute; en stage, organis&eacute; en 4 th&egrave;mes avec galerie interactive et visionneuse plein &eacute;cran.</p>
+              <div class="tags">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+              </div>
+              <div class="projet-liens">
+                <button class="btn-projet btn-modal-open" data-modal="fotofolio">Voir le projet</button>
+              </div>
+            </div>
+          </article>
+
+<!-- ===== PROJET 05 — VILLA AUGUSTE ===== -->
+          <article class="projet-card">
+            <div class="projet-bg" style="background-image:url('images/villa_auguste_bg.jpg'); background-color:#2d4a3e;">
+              <span class="projet-num">05</span>
+              <span class="projet-annee">2026</span>
+            </div>
+            <div class="projet-body">
+              <h3>Site vitrine Villa Auguste</h3>
+              <p>Site vitrine pour une chambre d&apos;h&ocirc;tes &agrave; Quimper, r&eacute;alis&eacute; en stage. Pr&eacute;sentation des chambres, activit&eacute;s et informations pratiques.</p>
+              <div class="tags">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">SVG</span>
+              </div>
+              <div class="projet-liens">
+                <button class="btn-projet btn-modal-open" data-modal="villaauguste">Voir le projet</button>
+                <a href="https://www.villaauguste.fr" class="btn-projet secondary" target="_blank" rel="noopener">Site en ligne</a>
+              </div>
+            </div>
+          </article>
+
+<!-- ===== PROJET 06 — SITE AUGUSTE ===== -->
+          <article class="projet-card">
+            <div class="projet-bg" style="background-image:url('images/auguste_bg.jpg'); background-color:#1a2e1a;">
+              <span class="projet-num">06</span>
+              <span class="projet-annee">2026</span>
+            </div>
+            <div class="projet-body">
+              <h3>Site Auguste</h3>
+              <p>Site dédié à Auguste le caïque, mascotte de la Villa Auguste. Stack moderne : Next.js 14, TypeScript, Tailwind CSS et MongoDB.</p>
+              <div class="tags">
+                <span class="tag">Next.js 14</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">MongoDB</span>
+              </div>
+              <div class="projet-liens">
+                <button class="btn-projet btn-modal-open" data-modal="auguste">Voir le projet</button>
+                <a href="#" class="btn-projet secondary" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="stages" class="section reveal alt-bg">
+      <div class="section-inner">
+        <h2>Expériences en entreprise</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="tl-card">
+              <div class="tl-photo" style="background-image:url('images/fotofolio_bg.jpg')">
+                <span class="tl-date">Décembre 2025</span>
+              </div>
+              <div class="tl-body">
+                <h3>Stage 1 — Artistes Sans Frontières</h3>
+                <p class="tl-lieu">6, impasse Lazare Carnot — Quimper (29) — Association culturelle</p>
+                <p>Conception du portfolio photographique Fotofolio (Projet 04) et début du site vitrine Villa Auguste (Projet 05) : structure multi-pages, illustrations SVG et intégration responsive.</p>
+                <div class="tags">
+                  <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">SVG</span><span class="tag">Responsive</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="tl-card">
+              <div class="tl-photo" style="background-image:url('images/fotofolio_bg.jpg')">
+                <span class="tl-date">Mars 2026</span>
+              </div>
+              <div class="tl-body">
+                <h3>Stage 2 — Artistes Sans Frontières</h3>
+                <p class="tl-lieu">6, impasse Lazare Carnot — Quimper (29) — Association culturelle</p>
+                <p>Finalisation du site vitrine Villa Auguste (Projet 05) et démarrage du site Auguste (Projet 06) : architecture Next.js 14, TypeScript, Tailwind CSS et découverte de MongoDB.</p>
+                <div class="tags">
+                  <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">SVG</span><span class="tag">Next.js 14</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">MongoDB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="tl-card">
+              <div class="tl-photo" style="background-image:url('images/fotofolio_bg.jpg')">
+                <span class="tl-date">Juin 2026</span>
+              </div>
+              <div class="tl-body">
+                <h3>Stage 3 — Artistes Sans Frontières</h3>
+                <p class="tl-lieu">6, impasse Lazare Carnot — Quimper (29) — Association culturelle</p>
+                <p>Finalisation du site Auguste (Projet 06) : implémentation complète de la base de données MongoDB pour la gestion dynamique des photos, descriptions et vidéos.</p>
+                <div class="tags">
+                  <span class="tag">Next.js 14</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">MongoDB</span><span class="tag">NoSQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="veille" class="section reveal">
+      <div class="section-inner">
+        <h2>Veille technologique</h2>
+        <p class="intro-text">
+          Sujet&nbsp;: <strong>Les formats d&apos;image sur le web</strong> &mdash; &eacute;volution, disparition et &eacute;mergence des nouveaux standards.<br>
+          Sources&nbsp;: unwabu.fr &bull; promatec.digital &bull; laconsole.dev &bull; elementor.com
+        </p>
+
+        <!-- intro -->
+        <div class="veille-intro-bloc">
+          <p>Les images repr&eacute;sentent en moyenne <strong>50&nbsp;% du poids d&apos;une page web</strong>. Le choix du format impacte directement la vitesse de chargement, le r&eacute;f&eacute;rencement SEO et l&apos;exp&eacute;rience utilisateur. Cette veille analyse l&apos;&eacute;volution des formats&nbsp;: ceux qui ont disparu, ceux qui perdurent avec leur r&ocirc;le pr&eacute;cis, ceux qui s&apos;imposent aujourd&apos;hui, et ceux qui dessinent le futur.</p>
+        </div>
+
+        <!-- PARTIE 1 — DISPARUS -->
+        <div class="veille-partie">
+          <h3 class="veille-partie-titre"><span class="veille-badge veille-badge--rouge">Disparus ou en d&eacute;clin</span></h3>
+          <div class="veille-grid">
+            <div class="veille-card">
+              <div class="veille-photo" style="background-image:url(&apos;images/swf.jpg&apos;)">
+                <span class="veille-titre">Flash .SWF</span>
+              </div>
+              <div class="veille-body">
+                <p>Format multim&eacute;dia interactif dominant dans les ann&eacute;es 2000. Supprim&eacute; de tous les navigateurs fin 2020&nbsp;: trop lourd, non s&eacute;curis&eacute;, incompatible mobile. Son abandon illustre comment une technologie peut dispara&icirc;tre en quelques ann&eacute;es sous la pression des nouveaux usages.</p>
+              </div>
+            </div>
+            <div class="veille-card">
+              <div class="veille-photo" style="background-image:url(&apos;images/gif.jpg&apos;)">
+                <span class="veille-titre">GIF anim&eacute;</span>
+              </div>
+              <div class="veille-body">
+                <p>Cr&eacute;&eacute; en 1987, toujours populaire pour les m&egrave;mes mais techniquement d&eacute;pass&eacute;&nbsp;: limit&eacute; &agrave; 256 couleurs, qualit&eacute; m&eacute;diocre, fichiers lourds. Progressivement remplac&eacute; par des vid&eacute;os MP4 en boucle, plus l&eacute;g&egrave;res et avec un rendu bien sup&eacute;rieur.</p>
+              </div>
+            </div>
+            <div class="veille-card">
+              <div class="veille-photo" style="background-image:url(&apos;images/bmp.jpg&apos;)">
+                <span class="veille-titre">BMP</span>
+              </div>
+              <div class="veille-body">
+                <p>Format bitmap sans compression, quasi absent du web. Une image BMP peut peser plusieurs m&eacute;gaoctets l&agrave; o&ugrave; un JPEG &eacute;quivalent ne d&eacute;passe pas quelques dizaines de Ko. Aucune raison de l&apos;utiliser en ligne.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PARTIE 2 — ACTUELS -->
+        <div class="veille-partie">
+          <h3 class="veille-partie-titre"><span class="veille-badge veille-badge--bleu">En usage &mdash; chacun dans son r&ocirc;le</span></h3>
+          <div class="veille-formats-liste">
+            <div class="veille-format-item">
+              <div class="veille-format-label">JPEG</div>
+              <div class="veille-format-desc"><strong>Photos &amp; images complexes.</strong> Cr&eacute;&eacute; en 1992, il reste le format universel pour les photographies (32,4&nbsp;% des images web en 2024). Compression avec perte, compatibilit&eacute; totale, mais ne g&egrave;re pas la transparence.</div>
+            </div>
+            <div class="veille-format-item">
+              <div class="veille-format-label">PNG</div>
+              <div class="veille-format-desc"><strong>Logos, ic&ocirc;nes, transparence.</strong> Seul format universel avec transparence alpha compl&egrave;te. Compression sans perte. Inconvénient : fichiers lourds pour les photos.</div>
+            </div>
+            <div class="veille-format-item">
+              <div class="veille-format-label">SVG</div>
+              <div class="veille-format-desc"><strong>Format vectoriel.</strong> Bas&eacute; sur XML, redimensionnable sans perte, animable via CSS/JS. Id&eacute;al pour les logos et ic&ocirc;nes simples. Attention&nbsp;: peut devenir tr&egrave;s lourd pour des illustrations complexes.</div>
+            </div>
+            <div class="veille-format-item">
+              <div class="veille-format-label">WebP</div>
+              <div class="veille-format-desc"><strong>Format polyvalent recommand&eacute; pour le web.</strong> Cr&eacute;&eacute; par Google (2010)&nbsp;: compression avec ou sans perte, transparence, animations. En moyenne <strong>34&nbsp;% plus l&eacute;ger qu&apos;un JPEG</strong> &agrave; qualit&eacute; &eacute;quivalente. Support&eacute; par 95&nbsp;%+ des navigateurs. Natif dans WordPress depuis la v5.8 (2021).</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PARTIE 3 — ÉMERGENTS -->
+        <div class="veille-partie">
+          <h3 class="veille-partie-titre"><span class="veille-badge veille-badge--vert">&Eacute;mergents &mdash; les formats d&apos;avenir</span></h3>
+          <div class="veille-grid">
+            <div class="veille-card">
+              <div class="veille-photo" style="background-image:url(&apos;images/avif.jpg&apos;)">
+                <span class="veille-titre">AVIF</span>
+              </div>
+              <div class="veille-body">
+                <p><strong>Le plus performant en 2025.</strong> Bas&eacute; sur le codec AV1 (open-source, sans redevance, port&eacute; par Google, Apple, Netflix&hellip;). Compression <strong>50&nbsp;% meilleure que WebP</strong> et <strong>65&nbsp;% meilleure que JPEG</strong> &agrave; qualit&eacute; &eacute;quivalente. Supporte HDR et couleurs larges. Compatibilit&eacute;&nbsp;: 93&nbsp;% des navigateurs en 2024. Natif dans WordPress v6.5 (2024). Limite&nbsp;: encodage tr&egrave;s gourmand en ressources serveur.</p>
+                <div class="tags" style="margin-top:.5rem"><span class="tag">Open-source</span><span class="tag">HDR</span><span class="tag">&minus;50&nbsp;% vs WebP</span></div>
+              </div>
+            </div>
+            <div class="veille-card">
+              <div class="veille-photo" style="background-image:url(&apos;images/heic.jpg&apos;)">
+                <span class="veille-titre">HEIC / HEIF</span>
+              </div>
+              <div class="veille-body">
+                <p><strong>Format natif des iPhones depuis iOS&nbsp;11.</strong> D&eacute;velopp&eacute; par le MPEG, compression efficace, HDR, jusqu&apos;&agrave; 16 bits par canal. Inconv&eacute;nient majeur&nbsp;: non support&eacute; nativement par les navigateurs web &mdash; une conversion est indispensable avant toute publication en ligne.</p>
+                <div class="tags" style="margin-top:.5rem"><span class="tag">iOS / macOS</span><span class="tag">HDR</span><span class="tag">Conversion n&eacute;cessaire</span></div>
+              </div>
+            </div>
+            <div class="veille-card">
+              <div class="veille-photo" style="background-image:url(&apos;images/jpegxl.jpg&apos;)">
+                <span class="veille-titre">JPEG XL</span>
+              </div>
+              <div class="veille-body">
+                <p><strong>Le successeur ambitieux du JPEG.</strong> Jusqu&apos;&agrave; 55&nbsp;% plus l&eacute;ger que le JPEG, r&eacute;trocompatible avec les fichiers JPEG existants, supporte HDR et rendu progressif. Mais Chrome a retir&eacute; son support en 2023. Seul Safari 17+ le g&egrave;re nativement. Adoption en attente.</p>
+                <div class="tags" style="margin-top:.5rem"><span class="tag">&minus;55&nbsp;% vs JPEG</span><span class="tag">R&eacute;trocompatible</span><span class="tag">Adoption limit&eacute;e</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="veille-encadre">
+            <h4> Bonne pratique d&eacute;veloppeur &mdash; la balise <code>&lt;picture&gt;</code></h4>
+            <p>Pour servir le meilleur format support&eacute; par chaque navigateur avec un fallback universel&nbsp;:</p>
+            <pre class="veille-code"><code>&lt;picture&gt;
+  &lt;source srcset="image.avif" type="image/avif"&gt;
+  &lt;source srcset="image.webp" type="image/webp"&gt;
+  &lt;img src="image.jpg" alt="Description"&gt;
+&lt;/picture&gt;</code></pre>
+            <p>Le navigateur choisit automatiquement&nbsp;: AVIF en priorit&eacute;, WebP en fallback, JPEG en dernier recours.</p>
+          </div>
+        </div>
+
+        <!-- PARTIE 4 — FUTUR & IA -->
+        <div class="veille-partie">
+          <h3 class="veille-partie-titre"><span class="veille-badge veille-badge--violet">Le futur &mdash; IA g&eacute;n&eacute;rative et compression neuronale</span></h3>
+          <div class="veille-futur-grid">
+            <div class="veille-futur-bloc">
+              <h4>Compression par intelligence artificielle</h4>
+              <p>Google, Meta et NVIDIA travaillent sur des <strong>codecs bas&eacute;s sur des r&eacute;seaux de neurones</strong> qui &laquo;&nbsp;apprennent&nbsp;&raquo; &agrave; reconstruire une image plut&ocirc;t que de simplement supprimer des donn&eacute;es. Les gains estim&eacute;s sont de 35 &agrave; 45&nbsp;% au-del&agrave; de l&apos;AVIF. Ces codecs ne sont pas encore standardis&eacute;s, mais repr&eacute;sentent la prochaine rupture technologique.</p>
+            </div>
+            <div class="veille-futur-bloc">
+              <h4>L&apos;IA g&eacute;n&eacute;rative et les formats d&apos;export</h4>
+              <p>Des outils comme <strong>Midjourney, DALL&middot;E, Stable Diffusion ou Adobe Firefly</strong> g&eacute;n&egrave;rent des images &agrave; partir d&apos;un texte en travaillant dans un <strong>espace latent</strong> &mdash; une repr&eacute;sentation math&eacute;matique abstraite &mdash; avant d&apos;exporter en PNG, JPEG ou WebP. &Agrave; noter&nbsp;: <strong>Recraft&nbsp;v4</strong> est aujourd&apos;hui le premier g&eacute;n&eacute;rateur IA capable de produire de v&eacute;ritables <strong>SVG natifs</strong>, une avanc&eacute;e majeure pour les graphistes.</p>
+            </div>
+            <div class="veille-futur-bloc">
+              <h4>Les enjeux &eacute;thiques</h4>
+              <p>L&apos;essor de l&apos;IA g&eacute;n&eacute;rative soul&egrave;ve des questions importantes. Selon l&apos;<em>Artists Rights Alliance</em> (2024), <strong>72&nbsp;% des artistes visuels</strong> estiment que leurs &oelig;uvres ont &eacute;t&eacute; utilis&eacute;es sans consentement dans les datasets d&apos;entra&icirc;nement. La question des droits d&apos;auteur et de la tra&ccedil;abilit&eacute; des images g&eacute;n&eacute;r&eacute;es par IA reste un d&eacute;bat largement ouvert en 2025.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SOURCES -->
+        <div class="veille-sources">
+          <h4>Sources</h4>
+          <ul>
+            <li><a href="https://unwabu.fr/faut-il-passer-au-format-webp-et-oublier-les-jpg-et-png-pour-votre-site-web/" target="_blank" rel="noopener">unwabu.fr &mdash; Faut-il passer au format WebP&nbsp;? (Marc Chazelle, 2023)</a></li>
+            <li><a href="https://promatec.digital/blog/2024/09/04/quels-sont-les-meilleurs-formats-dimages-pour-le-web/" target="_blank" rel="noopener">promatec.digital &mdash; Les meilleurs formats d&apos;images pour le web (2024)</a></li>
+            <li><a href="https://laconsole.dev/blog/comparatif-formats-image" target="_blank" rel="noopener">laconsole.dev &mdash; JPG, PNG, SVG, WebP&hellip; Quels formats choisir&nbsp;? (Thibaud d&apos;Arros, 2025)</a></li>
+            <li><a href="https://elementor.com/blog/fr/avif-vs-webp-quel-format-dimage-regne-en-maitre-en-2024/" target="_blank" rel="noopener">elementor.com &mdash; AVIF vs WebP&nbsp;: quel format r&egrave;gne en ma&icirc;tre&nbsp;? (Ben Pines, 2024)</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+  <!-- ===================================================
+       MODALE 01-A — Packet Tracer
+  =================================================== -->
+  <div id="modal-reseau-packettracer" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-pt-titre">
+    <div class="modal-box">
+      <div class="modal-hero" style="background-image:url('images/rectangle_reseau.jpg')">
+        <div class="modal-hero-overlay"></div>
+        <button class="modal-close" aria-label="Fermer">&#x2715;</button>
+        <div class="modal-hero-content">
+          <span class="modal-badge">Projet 01-A &mdash; 2025</span>
+          <h2 id="modal-pt-titre">Communication d'un réseau avec Packet Tracer</h2>
+          <p class="modal-hero-sub">BTS SIO SLAM &mdash; GRETA Quimper</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>TP de découverte des réseaux TCP/IP à l'aide du simulateur Cisco Packet Tracer. L'objectif est de comprendre les notions d'adressage IP, de masque de sous-réseau et de routage entre segments de réseau distincts.</p>
+        </div>
+        <div class="modal-section">
+          <img src="images/shema_et_plan_adressage_packettracer.jpg" alt="Schéma et plan d'adressage Packet Tracer" class="modal-img" />
+        </div>
+        <div class="modal-section">
+          <h3>Travail réalisé</h3>
+          <div class="modal-phases">
+            <div class="modal-phase">
+              <span class="phase-num">1</span>
+              <div>
+                <strong>Conception et adressage</strong>
+                <p>Réalisation d'un réseau sous Packet Tracer (routeurs, switchs, PCs). Plan d'adressage IP en classe C (192.168.0.0/24). Vérification de la connectivité par commandes <code>ping</code> et <code>ipconfig</code>, relevé des adresses MAC via <code>ARP</code>.</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num">2</span>
+              <div>
+                <strong>Analyse des sous-réseaux</strong>
+                <p>Identification des <em>NET_ID</em> en notation binaire et décimale. Diagnostic d'isolement d'un poste hors sous-réseau (PC3 — 192.168.1.2) et correction de son adressage pour rétablir la communication.</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num">3</span>
+              <div>
+                <strong>Expérimentations masques variables</strong>
+                <p>Trois expérimentations avec des masques différents (255.0.0.0 / 255.255.0.0 / 255.255.255.0) pour observer l'impact sur la communication inter-PC. Vérification binaire et test Packet Tracer pour chaque cas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="tags">
+            <span class="tag">Packet Tracer</span>
+            <span class="tag">TCP/IP</span>
+            <span class="tag">Adressage IP</span>
+            <span class="tag">Sous-réseaux</span>
+            <span class="tag">Ping / ARP</span>
+          </div>
+        </div>
+        <div class="modal-footer-links">
+          <a href="#" class="btn-projet" target="_blank" rel="noopener">Voir le rapport</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       MODALE 01-B — GLPI
+  =================================================== -->
+  <div id="modal-reseau-glpi" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-glpi-titre">
+    <div class="modal-box">
+      <div class="modal-hero" style="background-image:url('images/rectangle_reseau.jpg')">
+        <div class="modal-hero-overlay"></div>
+        <button class="modal-close" aria-label="Fermer">&#x2715;</button>
+        <div class="modal-hero-content">
+          <span class="modal-badge">Projet 01-B &mdash; 2025</span>
+          <h2 id="modal-glpi-titre">Ticketing avec GLPI &amp; base de données</h2>
+          <p class="modal-hero-sub">BTS SIO SLAM &mdash; GRETA Quimper</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>Installation et configuration de GLPI (Gestionnaire Libre de Parc Informatique) sous Windows avec WampServer. Mise en place d'un système de ticketing appuyé sur une base MySQL dédiée, sécurisée avec des droits minimaux.</p>
+        </div>
+        <div class="modal-section">
+          <img src="images/ticket_glpi.jpg" alt="Interface de ticket GLPI" class="modal-img" />
+        </div>
+        <div class="modal-section">
+          <h3>Travail réalisé</h3>
+          <div class="modal-phases">
+            <div class="modal-phase">
+              <span class="phase-num">1</span>
+              <div>
+                <strong>Préparation de la base MySQL</strong>
+                <p>Sécurisation du compte <em>root</em> via phpMyAdmin. Création d'un utilisateur dédié <code>GLPI</code> avec droits exclusifs sur sa propre base, en appliquant le principe du moindre privilège.</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num">2</span>
+              <div>
+                <strong>Installation et configuration de GLPI</strong>
+                <p>Décompression de l'archive dans <code>wamp64/www/glpi</code>, création d'un alias Apache et configuration du fichier <code>glpi.conf</code>. Lancement de l'assistant d'installation via <code>http://localhost/glpi</code> et connexion à la base MySQL.</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num">3</span>
+              <div>
+                <strong>Mise en service du ticketing</strong>
+                <p>Paramétrage de GLPI : création d'utilisateurs, catégories de tickets, gestion des incidents. Vérification du cycle de vie complet d'un ticket (ouverture → traitement → clôture).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="tags">
+            <span class="tag">GLPI</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">phpMyAdmin</span>
+            <span class="tag">WampServer</span>
+            <span class="tag">Apache</span>
+            <span class="tag">Windows</span>
+          </div>
+        </div>
+        <div class="modal-footer-links">
+          <a href="#" class="btn-projet" target="_blank" rel="noopener">Voir le rapport</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       MODALE 01-C — Windows Server 2016
+  =================================================== -->
+  <div id="modal-reseau-winserver" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-ws-titre">
+    <div class="modal-box">
+      <div class="modal-hero" style="background-image:url('images/rectangle_reseau.jpg')">
+        <div class="modal-hero-overlay"></div>
+        <button class="modal-close" aria-label="Fermer">&#x2715;</button>
+        <div class="modal-hero-content">
+          <span class="modal-badge">Projet 01-C &mdash; 2026</span>
+          <h2 id="modal-ws-titre">Réseau d'entreprise Windows Server 2016</h2>
+          <p class="modal-hero-sub">BTS SIO SLAM &mdash; GRETA Quimper</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>Installation et administration complète d'un réseau d'entreprise sous Windows Server 2016. Réseau de classe C privée (192.168.10.0/24) avec un serveur <em>Serv10</em> (IP fixe : 192.168.10.254) et un poste client <em>Client101</em> sous Windows 10, intégrés dans le domaine Active Directory <em>Dom10.edu</em>.</p>
+        </div>
+        <div class="modal-section">
+          <img src="images/activedirectory.jpg" alt="Console Active Directory dom10.edu" class="modal-img" />
+        </div>
+        <div class="modal-section">
+          <h3>Travail réalisé</h3>
+          <div class="modal-phases">
+            <div class="modal-phase">
+              <span class="phase-num">P1</span>
+              <div>
+                <strong>Installation et Active Directory</strong>
+                <p>Installation de Windows Server 2016, configuration TCP/IP (IP fixe, DNS local), déploiement de l'Active Directory et du domaine <code>Dom10.edu</code>. Jonction du poste client Windows 10 au domaine.</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num">P2</span>
+              <div>
+                <strong>Services HTTP et FTP (IIS)</strong>
+                <p>Installation du rôle serveur Web <em>IIS</em>. Relevé de l'arborescence de la console IIS et du répertoire <code>Inetpub</code>. Configuration et test des services HTTP et FTP depuis le poste client.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="tags">
+            <span class="tag">Windows Server 2016</span>
+            <span class="tag">Active Directory</span>
+            <span class="tag">DNS / DHCP</span>
+            <span class="tag">IIS</span>
+            <span class="tag">FTP</span>
+            <span class="tag">TCP/IP</span>
+            <span class="tag">Windows 10</span>
+          </div>
+        </div>
+        <div class="modal-footer-links">
+          <a href="#" class="btn-projet" target="_blank" rel="noopener">Voir le rapport</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       MODALE 02 — LaFleur
+  =================================================== -->
+  <div id="modal-lafleur" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-lafleur-titre">
+    <div class="modal-box">
+      <div class="modal-hero" style="background-image:url('images/rosiers_parfum_blur.jpg')">
+        <div class="modal-hero-overlay"></div>
+        <button class="modal-close" aria-label="Fermer">&#x2715;</button>
+        <div class="modal-hero-content">
+          <span class="modal-badge">Projet 02 &mdash; 2025</span>
+          <h2 id="modal-lafleur-titre">Site LaFleur</h2>
+          <p class="modal-hero-sub">BTS SIO SLAM &mdash; GRETA Quimper</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>La société Lafleur commercialise des graines et bulbes de fleurs d'ornement pour collectivités locales. M. Blaise, directeur, souhaitait mettre en ligne son catalogue papier afin de réduire les coûts d'envoi et faciliter les commandes.</p>
+        </div>
+        <div class="modal-section">
+          <h3>Travail réalisé</h3>
+          <div class="modal-phases">
+            <div class="modal-phase">
+              <span class="phase-num">V1</span>
+              <div>
+                <strong>Site statique HTML</strong>
+                <p>Conception d'un site avec frameset : page d'accueil, menu de navigation et pages catalogue (bulbes, plantes à massif, rosiers). Mise en page tabulaire avec photos, références et prix.</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num">V2</span>
+              <div>
+                <strong>Catalogue dynamique PHP / MySQL</strong>
+                <p>Création de la base de données <code>baseLafleur1</code> (tables <em>categorie</em> et <em>produit</em>). Scripts PHP <code>menu.php</code> et <code>listePdt.php</code> pour afficher dynamiquement catégories et produits, avec transmission de paramètres via <code>$_GET</code>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Laragon</span>
+            <span class="tag">PhpMyAdmin</span>
+          </div>
+        </div>
+        <div class="modal-footer-links">
+          <a href="#" class="btn-projet" target="_blank" rel="noopener">Voir la démo</a>
+          <a href="#" class="btn-projet secondary" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       MODALE 03 — HUNVRE
+  =================================================== -->
+  <div id="modal-hunvre" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-hunvre-titre">
+    <div class="modal-box">
+      <div class="modal-hero" style="background-image:url('images/hunvre_bg.jpg'); background-color:#1a0a2e;">
+        <div class="modal-hero-overlay"></div>
+        <button class="modal-close" aria-label="Fermer">&#x2715;</button>
+        <div class="modal-hero-content">
+          <span class="modal-badge">Projet 03 &mdash; PPE &mdash; 2026</span>
+          <h2 id="modal-hunvre-titre">Hunvre &mdash; Jeu de cartes</h2>
+          <p class="modal-hero-sub">Projet Professionnel Encadr&eacute; &mdash; &Eacute;quipe de 5 &mdash; GRETA Quimper</p>
+        </div>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>Projet professionnel encadr&eacute; (PPE) r&eacute;alis&eacute; en &eacute;quipe de 5 &eacute;tudiants. Hunvre est un jeu de cartes inspir&eacute; de <strong>Balatro</strong>, adapt&eacute; avec des r&egrave;gles simplifi&eacute;es&nbsp;: combinaisons de poker classiques (paire, brelan, suite, couleur, full, carr&eacute;, quinte flush), sans les jokers modificateurs du jeu original. Le langage Java &eacute;tait impos&eacute;. Le travail a &eacute;t&eacute; g&eacute;r&eacute; collaborativement via Git (5 branches, une par membre).</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Architecture du projet</h3>
+          <div class="modal-phases">
+            <div class="modal-phase">
+              <span class="phase-num" style="background:var(--bleu-c)">MVC</span>
+              <div>
+                <strong>Patron de conception Mod&egrave;le-Vue-Contr&ocirc;leur</strong>
+                <p>Architecture commune aux deux versions&nbsp;: <em>model</em> (CarteJeu, DeckJoueur, Utilisateur), <em>vue</em> (Accueil, Connexion, Partie, Scores, Profil&hellip;), <em>controleur</em> (ControleurPartie, ControleurConnexion, ControleurScores&hellip;). La classe <code>DAOAcces</code> centralise les connexions JDBC &agrave; la base MySQL.</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num" style="background:#7c3aed">V. Lourde</span>
+              <div>
+                <strong>Application bureau &mdash; JavaFX</strong>
+                <p>Interface graphique compl&egrave;te&nbsp;: &eacute;cran de connexion, plateau divis&eacute; en zones (ZoneTitre, ZoneMenu, ZoneScore, ZoneCentrale, ZoneMain, ZoneSeb), &eacute;cran de fin. D&eacute;tection des combinaisons de poker en temps r&eacute;el (paire &rarr; quinte flush), multiplicateur de score, gestion des mains jouables et sauvegarde du deck en BDD.</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num" style="background:#0891b2">V. L&eacute;g&egrave;re</span>
+              <div>
+                <strong>Application web &mdash; Java Servlet (Jakarta EE) + Tomcat</strong>
+                <p>Application web MVC compl&egrave;te&nbsp;: connexion avec session HTTP, cr&eacute;ation de compte, tableau des scores, tirage de cartes depuis la BDD. S&eacute;curisation des mots de passe par <strong>hachage BCrypt</strong> (<code>jbcrypt-0.4</code>)&nbsp;: sel al&eacute;atoire int&eacute;gr&eacute;, hash de 60 caract&egrave;res, v&eacute;rification sans stocker le mot de passe en clair. D&eacute;ploy&eacute; sur Tomcat via Eclipse WTP.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Base de donn&eacute;es MySQL</h3>
+          <p>La base <code>hunvre</code> (version finale <code>hunvre_VFINALE1.0.sql</code>) comprend 8 tables&nbsp;: <em>carte</em> (52 cartes, 4 couleurs), <em>visuel</em>, <em>utilisateur</em>, <em>joker</em>, <em>modificateur</em>, <em>contrainte</em>, et les tables de jonction <em>deck_carte</em>, <em>deck_joker</em>, <em>deck_mod</em>. La colonne <code>mdp</code> a &eacute;t&eacute; migr&eacute;e en <code>VARCHAR(60)</code> pour accueillir les hash BCrypt.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">JavaFX</span>
+            <span class="tag">Jakarta Servlet</span>
+            <span class="tag">Tomcat</span>
+            <span class="tag">JDBC</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">BCrypt</span>
+            <span class="tag">phpMyAdmin</span>
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Eclipse WTP</span>
+            <span class="tag">MVC</span>
+            <span class="tag">MCD / UML</span>
+          </div>
+        </div>
+
+        <div class="modal-footer-links">
+          <a href="#" class="btn-projet" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" class="btn-projet secondary" target="_blank" rel="noopener">Cahier des charges</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       MODALE 04 — FOTOFOLIO
+  =================================================== -->
+  <div id="modal-fotofolio" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-fotofolio-titre">
+    <div class="modal-box">
+      <div class="modal-hero" style="background-image:url('images/fotofolio_bg.jpg'); background-color:#1a1a2e;">
+        <div class="modal-hero-overlay"></div>
+        <button class="modal-close" aria-label="Fermer">&#x2715;</button>
+        <div class="modal-hero-content">
+          <span class="modal-badge">Projet 04 &mdash; Stage 1 &mdash; 2025</span>
+          <h2 id="modal-fotofolio-titre">Fotofolio</h2>
+          <p class="modal-hero-sub">Stage chez Artistes Sans Fronti&egrave;res &mdash; Quimper &mdash; nov.&nbsp;2025&nbsp;&rarr;&nbsp;janv.&nbsp;2026</p>
+        </div>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>R&eacute;alisation lors du stage 1 chez <strong>Artistes Sans Fronti&egrave;res</strong> (6, impasse Lazare Carnot, Quimper). Objectif&nbsp;: concevoir un portfolio web photographique personnel pour pr&eacute;senter des s&eacute;ries de photos organis&eacute;es par th&egrave;me, avec une exp&eacute;rience de navigation fluide et immersive.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>R&eacute;alisation</h3>
+          <div class="modal-phases">
+            <div class="modal-phase">
+              <span class="phase-num">1</span>
+              <div>
+                <strong>Structure et mise en page</strong>
+                <p>Page unique HTML5 avec trois bandeaux d&apos;identification (pr&eacute;sentation, formation BTS, stage). Galerie principale en <em>CSS Grid</em> responsive (4 colonnes &rarr; 3 &rarr; 2 &rarr; 1 selon la largeur d&apos;&eacute;cran). Police typographique personnalis&eacute;e&nbsp;: <code>Stardos Stencil</code> (Google Fonts), pour une identit&eacute; visuelle photographique forte.</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num">2</span>
+              <div>
+                <strong>Interaction hover sur les vignettes</strong>
+                <p>Chaque vignette affiche au survol un <em>overlay</em> sombre avec le titre de la s&eacute;rie (CSS <code>transition opacity</code>) et un l&eacute;ger zoom (<code>transform: scale(1.05)</code>). Quatre s&eacute;ries photographiques&nbsp;: <em>des &eacute;claboussures&hellip;</em>, <em>de la nature&hellip;</em>, <em>des mouettes&hellip;</em>, <em>des gens&hellip;</em></p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num">3</span>
+              <div>
+                <strong>Visionneuse plein &eacute;cran en JavaScript</strong>
+                <p>Au clic sur une vignette, un popup plein &eacute;cran s&apos;ouvre et charge dynamiquement les 5 photos de la s&eacute;rie correspondante. Navigation entre les photos via flèches (<code>&#10094;</code>&nbsp;/&nbsp;<code>&#10095;</code>) avec boucle circulaire (modulo). Fermeture par le bouton &times; ou en appuyant sur &Eacute;chap. Tout en <strong>JavaScript vanilla</strong>, sans librairie externe.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">CSS Grid</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Google Fonts</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="modal-footer-links">
+          <a href="https://stage.asf-web.fr/sebastien/index.html" class="btn-projet" target="_blank" rel="noopener">Voir le site</a>
+       
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       MODALE 05 — VILLA AUGUSTE
+  =================================================== -->
+  <div id="modal-villaauguste" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-va-titre">
+    <div class="modal-box">
+      <div class="modal-hero" style="background-image:url('images/villa_auguste_bg.jpg'); background-color:#2d4a3e;">
+        <div class="modal-hero-overlay"></div>
+        <button class="modal-close" aria-label="Fermer">&#x2715;</button>
+        <div class="modal-hero-content">
+          <span class="modal-badge">Projet 05 &mdash; Stage 2 &mdash; 2026</span>
+          <h2 id="modal-va-titre">Site vitrine Villa Auguste</h2>
+          <p class="modal-hero-sub">Stage chez Artistes Sans Fronti&egrave;res &mdash; Quimper &mdash; 2026</p>
+        </div>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>Commande r&eacute;alis&eacute;e pour <strong>Helga</strong>, informaticienne et h&ocirc;te de la <strong>Villa Auguste</strong>, chambre d&apos;h&ocirc;tes situ&eacute;e au 6 impasse Lazare Carnot &agrave; Quimper. La Villa Auguste est une maison d&eacute;di&eacute;e &agrave; l&apos;art et &agrave; l&apos;&eacute;change, accueillant voyageurs et artistes au c&oelig;ur de la Bretagne. L&apos;objectif &eacute;tait de concevoir un site vitrine sobre et fonctionnel pour pr&eacute;senter l&apos;&eacute;tablissement, ses chambres et ses services en ligne.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>R&eacute;alisation</h3>
+          <div class="modal-phases">
+            <div class="modal-phase">
+              <span class="phase-num">1</span>
+              <div>
+                <strong>Structure multi-pages HTML5 / CSS3</strong>
+                <p>Site compos&eacute; de 4 pages&nbsp;: <em>Accueil</em>, <em>Les chambres</em>, <em>Activit&eacute;s &amp; tourisme</em>, <em>Tarifs &amp; infos</em>. Navigation commune avec menu hamburger pour mobile. Design &eacute;pur&eacute; adapt&eacute; &agrave; l&apos;image d&apos;une maison d&apos;h&ocirc;tes haut de gamme.</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num">2</span>
+              <div>
+                <strong>Contenu et illustrations</strong>
+                <p>Pr&eacute;sentation de 5 chambres (Grande chambre ind&eacute;pendante, Grande chambre, Chambre lumineuse, Chambre Bleue, Petite chambre). Illustrations enti&egrave;rement en <strong>SVG</strong> pour un rendu net &agrave; toutes les r&eacute;solutions et un chargement rapide. Int&eacute;gration du logo et de la charte graphique de la Villa Auguste.</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num">3</span>
+              <div>
+                <strong>Int&eacute;grations et responsive</strong>
+                <p>Lien de r&eacute;servation via <strong>Booking.com</strong>, affichage des coordonn&eacute;es et horaires de contact. Site enti&egrave;rement <em>responsive</em> (mobile, tablette, desktop). Mentions l&eacute;gales. Logo de l&apos;association <em>Artistes Sans Fronti&egrave;res</em> en pied de page.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">SVG</span>
+            <span class="tag">Responsive Design</span>
+            <span class="tag">Menu hamburger</span>
+            <span class="tag">Booking.com</span>
+          </div>
+        </div>
+
+        <div class="modal-footer-links">
+          <a href="https://www.villaauguste.fr" class="btn-projet" target="_blank" rel="noopener">Voir le site</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ===================================================
+       MODALE 06 — SITE AUGUSTE
+  =================================================== -->
+  <div id="modal-auguste" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-auguste-titre">
+    <div class="modal-box">
+      <div class="modal-hero" style="background-image:url('images/auguste_bg.jpg'); background-color:#1a2e1a;">
+        <div class="modal-hero-overlay"></div>
+        <button class="modal-close" aria-label="Fermer">&#x2715;</button>
+        <div class="modal-hero-content">
+          <span class="modal-badge">Projet 06 &mdash; Stage 2 &amp; 3 &mdash; 2026 &mdash;  En cours</span>
+          <h2 id="modal-auguste-titre">Site Auguste</h2>
+          <p class="modal-hero-sub">Stage chez Artistes Sans Fronti&egrave;res &mdash; Quimper &mdash; Finalisation juin 2026</p>
+        </div>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-section">
+          <h3>Contexte</h3>
+          <p>Site d&eacute;di&eacute; &agrave; Auguste, le ca&iuml;que (perroquet) mascotte de la Villa Auguste &agrave; Quimper. Commenc&eacute; lors du stage 2, ce projet explore une stack moderne&nbsp;: Next.js 14 (React + TypeScript) avec Tailwind CSS pour le style, et une base de donn&eacute;es MongoDB (NoSQL). D&eacute;velopp&eacute; avec l&apos;&eacute;diteur de code Nova (Panic, macOS). Finalisation pr&eacute;vue lors du stage 3 en juin 2026.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Structure de l&apos;application</h3>
+          <div class="modal-phases">
+            <div class="modal-phase">
+              <span class="phase-num">1</span>
+              <div>
+                <strong>Architecture Next.js &mdash; App Router</strong>
+                <p>Application multi-pages avec l&apos;App Router de Next.js 14&nbsp;: <code>layout.tsx</code> commun (logo SVG, navigation, footer), pages <code>page.tsx</code> ind&eacute;pendantes pour chaque route&nbsp;: Accueil, Bio, Photos, Vid&eacute;os. Polices Google optimis&eacute;es via <code>next/font</code> (Geist Sans &amp; Geist Mono).</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num">2</span>
+              <div>
+                <strong>Page Bio &mdash; CV d&apos;Auguste</strong>
+                <p>Pr&eacute;sentation d&apos;Auguste&nbsp;: ca&iuml;que n&eacute; en d&eacute;cembre 2012, nationalit&eacute; franco-belge, esp&egrave;ce Pionites melanocephalus, originaire du Br&eacute;sil/P&eacute;rou. Alimentation &eacute;clectique incluant notamment &laquo;&nbsp;les doigts et les claviers&nbsp;&raquo;. </p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num">3</span>
+              <div>
+                <strong>Page Maison &mdash; Carrousel CSS anim&eacute;</strong>
+                <p>Galerie trois colonnes (avant / carrousel / apr&egrave;s) avec un diaporama automatique en CSS pur (<code>animate-glisse</code>, Tailwind). 10 photos d&apos;Auguste en JPEG. Mise en page responsive via classes Tailwind avec breakpoints <code>xl</code>, <code>2xl</code>, <code>3xl</code>. Composant <code>next/image</code> pour l&apos;optimisation automatique des images.</p>
+              </div>
+            </div>
+            <div class="modal-phase">
+              <span class="phase-num" style="background:#16a34a;">4</span>
+              <div>
+                <strong>Base de donn&eacute;es MongoDB &mdash;  en cours</strong>
+                <p>D&eacute;couverte et impl&eacute;mentation d&apos;une base NoSQL MongoDB pour stocker et restituer dynamiquement le contenu du site (photos, descriptions, vid&eacute;os). Finalisation pr&eacute;vue lors du stage 3 en juin 2026.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Technologies</h3>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">Next.js 14</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">NoSQL</span>
+            <span class="tag">Nova</span>
+            <span class="tag">next/image</span>
+            <span class="tag">App Router</span>
+            <span class="tag">Google Fonts</span>
+          </div>
+        </div>
+
+        <div class="modal-footer-links">
+          <a href="#" class="btn-projet" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+  <footer class="bandeau-bas">
+    <img src="images/bando-BA-PF.jpg" alt="Bandeau bas portfolio" />
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="mailto:sebastien.dumas283@orange.fr">sebastien.dumas283@orange.fr</a>
+        <span class="footer-sep"></span>
+        <a href="https://linkedin.com/in/sebastien-dumas" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="footer-sep"></span>
+        <a href="https://github.com/sebastien-dumas" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="footer-txt">© 2026 – Portfolio BTS SIO SLAM – GRETA de Quimper</p>
+    </div>
+  </footer>
+
+  <button id="scrollTop" title="Retour en haut" aria-label="Retour en haut">▲</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
